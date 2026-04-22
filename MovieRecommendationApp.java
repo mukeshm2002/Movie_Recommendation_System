@@ -82,10 +82,10 @@ public class MovieRecommendationApp {
 
             // 6. RECOMMENDATION LOGIC
             List<Movie> recommendations = movieDatabase.stream()
-                    .filter(m -> m.getGenre().equals(selectedMovie.getGenre())) // அதே ஜானர்
-                    .filter(m -> !m.getTitle().equalsIgnoreCase(selectedMovie.getTitle())) // அதே படம் வேண்டாம்
-                    .sorted((m1, m2) -> Double.compare(m2.getRating(), m1.getRating())) // டாப் ரேட்டிங் முதலில்
-                    .limit(29) // டாப் 3 மட்டும்
+                    .filter(m -> m.getGenre().equals(selectedMovie.getGenre()))
+                    .filter(m -> !m.getTitle().equalsIgnoreCase(selectedMovie.getTitle())) 
+                    .sorted((m1, m2) -> Double.compare(m2.getRating(), m1.getRating()))
+                    .limit(29) 
                     .collect(Collectors.toList());
 
             // 7. Finding the Result
