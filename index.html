@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ta">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CineSmart</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favican/cf2630c2-1313-47e6-9de0-1131e4c36f45.jpg">
+</head>
+<body>
+
+   <header>
+    <div class="logo" onclick="goBack()">
+        <span class="m-letter">Cine</span> Smart
+    </div>
+    <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search..." onkeyup="searchMovie()">
+        </div>
+    </header>
+
+    <main id="homeView">
+        <h2 class="label">All Movies</h2>
+        <div id="movieGrid" class="movie-grid"></div>
+    </main>
+
+    <section id="detailsView" style="display: none;">
+        <button class="back-btn" onclick="goBack()">⬅ Back to Home</button>
+        <div id="selectedMovieContent" class="details-layout"></div>
+        <hr class="line">
+        <h3 class="label">Recommended for You</h3>
+        <div id="recoList" class="movie-grid"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

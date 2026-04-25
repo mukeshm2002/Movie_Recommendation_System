@@ -1,0 +1,89 @@
+body {
+    background-color: #0a0a0a;
+    color: white;
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+}
+
+header {
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: -1px;
+    cursor: pointer;
+    color: white;
+}
+
+.m-letter {
+    background: #E50914; /* Netflix Red */
+    color: white;
+    padding: 0px 8px;
+    border-radius: 4px;
+    margin-right: 2px;
+}
+
+h1 { color: #E50914; cursor: pointer; margin: 0; }
+
+.search-box input {
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #333;
+    background: #111;
+    color: white;
+}
+
+.label { margin: 20px 5%; font-size: 1.4rem; }
+
+/* 🛠️ Grid Fix: 1 row-க்கு 4-5 படங்கள் */
+.movie-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 25px;
+    padding: 0 5% 40px;
+}
+
+.movie-card {
+    background: #141414;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s;
+    /* படத்தின் இடத்தை லாக் செய்ய */
+    min-height: 380px; 
+}
+
+.movie-card:hover { transform: scale(1.05); }
+
+.movie-card img {
+    width: 100%;
+    aspect-ratio: 2 / 3; /* இதுதான் flickering-ஐ நிறுத்தும் */
+    object-fit: cover;
+    background: #222; /* லோடிங் கலர் */
+}
+
+.movie-info { padding: 12px; text-align: center; }
+.movie-info h4 { margin: 0; font-size: 1rem; }
+.movie-info p { margin: 5px 0 0; color: #888; font-size: 0.85rem; }
+
+/* Details Layout */
+.details-layout {
+    display: flex;
+    gap: 40px;
+    padding: 40px 5%;
+    background: #111;
+}
+
+.details-img { width: 250px; aspect-ratio: 2/3; border-radius: 12px; object-fit: cover; }
+.back-btn { margin: 20px 5%; padding: 10px 20px; background: #E50914; color: white; border: none; cursor: pointer; border-radius: 4px; }
+.line { border: 0; height: 1px; background: #222; margin: 20px 5%; }
