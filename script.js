@@ -1,6 +1,5 @@
 const movies = [
     { id: 25, title: "Minnal Murali", genre: "Sci-Fi", rating: 4.8, image: "Posters/Minnal Murali 2.jpg", desc: "A village tailor gains extraordinary powers after a lightning strike." },
-    { id: 7, title: "LEO", genre: "Action", rating: 4.9, image: "Posters/LEO.PNG", desc: "A cafe owner's quiet life is shattered by his mysterious past." },
     { id: 43, title: "Sita Ramam", genre: "Romance", rating: 4.9, image: "Posters/Seetha Ramam.jpg", desc: "An orphaned soldier's life changes after receiving a letter from Sita." },
     { id: 13, title: "Demonte Colony 2", genre: "Horror", rating: 4.8, image: "Posters/Demonte colony 2.webp", desc: "The darkness returns with more mystery and haunting secrets." },
     { id: 47, title: "Doctor", genre: "Comedy", rating: 4.9, image: "Posters/Doctor.jpg", desc: "A stoic military doctor takes on a kidnapping ring with a quirky team." },
